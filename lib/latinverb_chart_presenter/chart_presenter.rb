@@ -58,6 +58,12 @@ module Linguistics
             LatinVerb::INFINITIVE_METHODS.each do |p|
               printf "%42s %42s\n", (p.to_s.gsub('_', ' ').gsub(/\b\w/){$&.upcase}), String(@verb.send(p)) rescue nil
             end
+
+            puts "\n"
+            puts "Imperatives"
+            puts "==========="
+            puts "#{@verb.imperatives[0]}, #{@verb.imperatives[1]}"
+
             return nil
           end
 
