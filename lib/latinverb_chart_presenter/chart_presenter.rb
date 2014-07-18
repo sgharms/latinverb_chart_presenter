@@ -48,12 +48,12 @@ module Linguistics
             puts "\n"
             puts "Participles"
             LatinVerb::PARTICIPLE_METHODS.each do |p|
-              printf "%42s %42s\n", p.to_s.gsub('_', ' ').gsub(/\b\w/){$&.upcase}, @verb.send(p)
+              printf "%42s %42s\n", p.to_s.gsub('_', ' ').gsub(/\b\w/){$&.upcase}, String(@verb.send(p)) rescue nil
             end
             puts "\n"
             puts "Infinitives"
             LatinVerb::INFINITIVE_METHODS.each do |p|
-              printf "%42s %42s\n", (p.to_s.gsub('_', ' ').gsub(/\b\w/){$&.upcase}), @verb.send(p)
+              printf "%42s %42s\n", (p.to_s.gsub('_', ' ').gsub(/\b\w/){$&.upcase}), String(@verb.send(p)) rescue nil
             end
             return nil
           end
