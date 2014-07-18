@@ -1,5 +1,3 @@
 require "latinverb_chart_presenter/version"
+require "latinverb_chart_presenter/chart_presenter"
 
-module LatinverbChartPresenter
-  # Your code goes here...
-end
