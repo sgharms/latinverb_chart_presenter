@@ -47,11 +47,14 @@ module Linguistics
                                            ], %w/Present Imperfect Perfect Past-Perfect/,f_subjunctive
             puts "\n"
             puts "Participles"
+            puts "==========="
             LatinVerb::PARTICIPLE_METHODS.each do |p|
               printf "%42s %42s\n", p.to_s.gsub('_', ' ').gsub(/\b\w/){$&.upcase}, String(@verb.send(p)) rescue nil
             end
+
             puts "\n"
             puts "Infinitives"
+            puts "==========="
             LatinVerb::INFINITIVE_METHODS.each do |p|
               printf "%42s %42s\n", (p.to_s.gsub('_', ' ').gsub(/\b\w/){$&.upcase}), String(@verb.send(p)) rescue nil
             end
