@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "latinverb_chart_presenter"
   spec.version       = LatinverbChartPresenter::VERSION
   spec.authors       = ["Steven G. Harms"]
-  spec.email         = ["steven@devbootcamp.com"]
+  spec.email         = ["steven.harms@gmail.com"]
   spec.summary       = %q{A library for displaying a LatinVerb}
   spec.homepage      = ""
   spec.license       = "MIT"
